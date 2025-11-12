@@ -1,0 +1,763 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+/* ========== HERO BACKGROUND SECTION ========== */
+.background {
+    background-image: url(download.png);
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+
+/* ========== NAVIGATION HEADER ========== */
+.header {
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.left ul li {
+    list-style-type: none;
+}
+
+.left ul li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right ul li {
+    list-style-type: none;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Language selector button */
+#selectLang {
+    border: 2px solid rgb(127, 127, 127);
+    color: white;
+    border-radius: 3px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#selectLang:hover {
+    border-color: white;
+}
+
+/* Sign In button */
+#signIn {
+    background-color: #e50914;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 15px;
+    transition: all 0.2s ease;
+}
+
+#signIn:hover {
+    background-color: #c40812;
+    cursor: pointer;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ========== HERO CONTENT SECTION ========== */
+.flexboxForTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(90vh - 9vh);
+    flex-direction: column;
+    z-index: 99;
+    padding: 20px;
+}
+
+.textContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 99;
+    text-align: center;
+}
+
+.text1,
+.text2,
+.text3 {
+    color: white;
+    text-align: center;
+}
+
+.text1 {
+    font-size: 3rem;
+    max-width: 700px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.text2 {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.text3 {
+    max-width: 600px;
+    font-size: 1.1rem;
+}
+
+/* ========== EMAIL SIGNUP FORM ========== */
+.signInContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.input input {
+    height: 60px;
+    width: 100%;
+    min-width: 300px;
+    padding-left: 20px;
+    background-color: rgba(51, 51, 51, 0.5);
+    border: 2px solid rgba(128, 128, 128, 0.6);
+    color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: border-color 0.2s ease;
+}
+
+.input input:focus {
+    outline: none;
+    border-color: white;
+}
+
+.input input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.signInButton button {
+    height: 64px;
+    min-width: 180px;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.signInButton button:hover {
+    background-color: #c40812;
+}
+
+button a,
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ========== GRADIENT TRANSITION SECTION ========== */
+.gradient1 {
+    height: 5px;
+    background: radial-gradient(circle at center,
+            #ff0000 0%,
+            #e839ae 25%,
+            #000 100%);
+}
+
+.gradient2 {
+    height: 100px;
+    background: radial-gradient(circle at top center,
+            #001525 0%,
+            #000000 70%,
+            #000000 100%);
+    position: relative;
+}
+
+.gradient2 .text4 {
+    color: white;
+    position: relative;
+    transform: translateY(70px);
+    padding: 0 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* ========== TRENDING CARDS SECTION ========== */
+.contentPart3 {
+    min-height: 50vh;
+    background-color: black;
+    padding: 40px 20px;
+}
+
+.cardBox1 {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer1 {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 280px;
+    width: 250px;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 10px 40px rgba(229, 9, 20, 0.5);
+}
+
+#label {
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    font-size: 8rem;
+    color: white;
+    font-weight: 800;
+    transition: transform 0.3s ease;
+}
+
+.card:hover #label {
+    transform: scale(1.1);
+}
+
+/* ========== FEATURES SECTION ========== */
+.text5 {
+    color: white;
+    padding: 40px 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: black;
+}
+
+.contentPart4 {
+    min-height: 40vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.cardBox2 {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    min-height: 280px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border-radius: 12px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #545F7C, #470A4F);
+    transition: transform 0.3s ease;
+}
+
+.card2:hover {
+    transform: translateY(-10px);
+}
+
+.card2 .heading {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.description {
+    color: rgb(210, 210, 210);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* ========== FAQ SECTION ========== */
+.text6 {
+    background-color: #000;
+    color: white;
+    padding: 40px 50px;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.contentPart5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 60vh;
+    background-color: #000;
+}
+
+.que {
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(35, 35, 35);
+    width: 90%;
+    max-width: 1000px;
+    min-height: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.que:hover {
+    background-color: rgb(59, 59, 59);
+}
+
+.toggle-icon {
+    font-size: 3rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.ans {
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(35, 35, 35);
+    width: 90%;
+    max-width: 1000px;
+    margin-bottom: 10px;
+    padding: 30px;
+    line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.ansHidden {
+    max-height: 0 !important;
+    padding: 0 30px !important;
+}
+
+.ans:not(.ansHidden) {
+    max-height: 600px;
+}
+
+/* ========== CALL TO ACTION SECTION ========== */
+.contentPart6 {
+    background-color: black;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.text7 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.signInContainer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.input2 input {
+    height: 50px;
+    flex: 1;
+    min-width: 300px;
+    padding-left: 20px;
+    background-color: rgba(51, 51, 51, 0.5);
+    border: 2px solid rgba(128, 128, 128, 0.6);
+    color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: border-color 0.2s ease;
+}
+
+.input2 input:focus {
+    outline: none;
+    border-color: white;
+}
+
+.input2 input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.signInButton2 .button {
+    height: 54px;
+    min-width: 180px;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.signInButton2 .button:hover {
+    background-color: #c40812;
+}
+
+/* ========== FOOTER SECTION ========== */
+.footerText2 {
+    background-color: #000;
+    color: rgba(181, 181, 181);
+    padding: 20px 50px;
+}
+
+.footerText21 {
+    color: white;
+    padding-top: 40px;
+}
+
+.footer1 {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 40px 20px;
+}
+
+.footerBox1 {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.innerBox1 ul {
+    padding: 20px 0;
+}
+
+.innerBox1 ul li {
+    color: rgba(181, 181, 181);
+    list-style: none;
+    text-decoration: underline;
+    text-decoration-color: rgb(181, 181, 181);
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.innerBox1 ul li:hover {
+    color: white;
+}
+
+.footer2 {
+    background-color: black;
+}
+
+.blankspace {
+    height: 50px;
+    background-color: black;
+}
+
+/* ========== LOADING SCREEN ========== */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.netflix-loader {
+    font-size: 6rem;
+    color: #e50914;
+    font-weight: 900;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+}
+
+/* ========== ANIMATED BACKGROUND STARS ========== */
+.star {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #f65959, #e47979);
+    opacity: 0.6;
+    position: absolute;
+    top: 130px;
+    left: 130px;
+    filter: blur(80px);
+    z-index: 0;
+    animation: starAnimation1 4s infinite alternate ease-in-out,
+               starPulse 1.3s infinite alternate ease-in-out;
+}
+
+.star2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #f65959, #e47979);
+    opacity: 0.8;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    filter: blur(80px);
+    z-index: 0;
+    animation: starAnimation2 4s infinite alternate ease-in-out,
+               starPulse 1.3s infinite alternate ease-in-out;
+}
+
+@keyframes starPulse {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 0.2;
+    }
+}
+
+@keyframes starAnimation1 {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(300px, 200px);
+    }
+}
+
+@keyframes starAnimation2 {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-300px, -200px);
+    }
+}
+
+/* ========== SCROLL ANIMATIONS ========== */
+.animate-in {
+    animation: slideUp 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== RESPONSIVE DESIGN - TABLETS ========== */
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+    .text1 {
+        font-size: 2.5rem;
+    }
+
+    .text2, .text3 {
+        font-size: 1.2rem;
+    }
+
+    .cardContainer1, .cardBox2 {
+        gap: 15px;
+    }
+
+    .card, .card2 {
+        width: calc(50% - 15px);
+        min-width: 220px;
+    }
+
+    .text4, .text5, .text6 {
+        font-size: 1.5rem;
+        padding: 30px;
+    }
+}
+
+/* ========== RESPONSIVE DESIGN - MOBILE ========== */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .left ul li img {
+        width: 120px;
+    }
+
+    .right ul {
+        gap: 10px;
+    }
+
+    .right ul li {
+        font-size: 0.9rem;
+    }
+
+    #selectLang, #signIn {
+        padding: 5px 10px;
+    }
+
+    .text1 {
+        font-size: 2rem;
+        max-width: 90%;
+    }
+
+    .text2, .text3 {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .signInContainer, .signInContainer2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input input, .input2 input {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .signInButton button, .signInButton2 .button {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .cardContainer1, .cardBox2 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card, .card2 {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .text4, .text5, .text6, .text7 {
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+
+    .que, .ans {
+        width: 95%;
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+
+    .toggle-icon {
+        font-size: 2.5rem;
+    }
+
+    .footerBox1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footerText2 {
+        padding: 20px;
+    }
+
+    .star, .star2 {
+        display: none; /* Hide animated stars on mobile for better performance */
+    }
+}
+
+/* ========== RESPONSIVE DESIGN - SMALL MOBILE ========== */
+@media (max-width: 480px) {
+    .left ul li img {
+        width: 100px;
+    }
+
+    .text1 {
+        font-size: 1.5rem;
+    }
+
+    .text2, .text3 {
+        font-size: 0.9rem;
+    }
+
+    .card2 .heading {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    #label {
+        font-size: 6rem;
+    }
+}
